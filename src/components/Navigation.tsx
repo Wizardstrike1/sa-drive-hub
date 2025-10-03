@@ -11,14 +11,15 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/register", label: "Register" },
     { path: "/teen-license", label: "Teen License" },
-    { path: "/driver-improvement", label: "Driver Improvement" },
+    { path: "/adult-license", label: "Adult License" },
+    { path: "/driver-improvement", label: "Online Driver Improvement" },
     { path: "/driving-lessons", label: "Driving Lessons" },
     { path: "/payment", label: "Payment" },
     { path: "/contact", label: "Contact" },
   ];
 
   return (
-    <nav className="bg-background border-b border-border sticky top-0 z-50 shadow-sm">
+    <nav className="bg-black border-b border-primary/20 sticky top-0 z-50 shadow-strong">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -48,11 +49,13 @@ const Navigation = () => {
           </div>
 
           {/* Call Button */}
-          <div className="hidden md:flex items-center space-x-2">
-            <Button className="bg-gradient-accent">
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
-            </Button>
+          <div className="hidden lg:flex items-center space-x-2">
+            <a href="tel:703-982-1400">
+              <Button className="bg-primary hover:bg-primary/90 font-bold">
+                <Phone className="w-4 h-4 mr-2" />
+                703-982-1400
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -79,10 +82,12 @@ const Navigation = () => {
                 </Button>
               </Link>
             ))}
-            <Button className="w-full bg-gradient-accent mt-4">
-              <Phone className="w-4 h-4 mr-2" />
-              Call Now
-            </Button>
+            <a href="tel:703-982-1400" className="block">
+              <Button className="w-full bg-primary hover:bg-primary/90 mt-4 font-bold">
+                <Phone className="w-4 h-4 mr-2" />
+                703-982-1400
+              </Button>
+            </a>
           </div>
         )}
       </div>

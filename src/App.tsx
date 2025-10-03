@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import TeenLicense from "./pages/TeenLicense";
+import AdultLicense from "./pages/AdultLicense";
 import DriverImprovement from "./pages/DriverImprovement";
 import DrivingLessons from "./pages/DrivingLessons";
 import Payment from "./pages/Payment";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/teen-license" element={<TeenLicense />} />
+          <Route path="/adult-license" element={<AdultLicense />} />
           <Route path="/driver-improvement" element={<DriverImprovement />} />
           <Route path="/driving-lessons" element={<DrivingLessons />} />
           <Route path="/payment" element={<Payment />} />
